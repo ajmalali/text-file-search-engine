@@ -34,11 +34,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jScrollPane1" min="-2" pref="1250" max="-2" attributes="0"/>
-                      <Component id="resultsLabel" min="-2" pref="1239" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="254" max="-2" attributes="0"/>
@@ -47,33 +43,39 @@
                               <Component id="searchField" min="-2" pref="520" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="searchButton" min="-2" pref="114" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="dscRadio" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ascRadio" min="-2" max="-2" attributes="0"/>
+                                  <Component id="IncDocRadio" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DecDocRadio" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="timeTakenLabel" min="-2" pref="395" max="-2" attributes="0"/>
-                                  <Component id="printInvertedIndex" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="titleLabel" min="-2" pref="465" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="instructionsLabel" min="-2" pref="433" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jScrollPane1" min="-2" pref="1250" max="-2" attributes="0"/>
+                              <Component id="resultsLabel" min="-2" pref="1239" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                      <EmptySpace pref="19" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="dscRadio" min="-2" max="-2" attributes="0"/>
-                          <Component id="ascRadio" min="-2" max="-2" attributes="0"/>
-                          <Component id="DecDocRadio" min="-2" max="-2" attributes="0"/>
-                          <Component id="IncDocRadio" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="sortByLabel" min="-2" pref="153" max="-2" attributes="0"/>
+                          <Component id="timeTakenLabel" min="-2" pref="395" max="-2" attributes="0"/>
+                          <Component id="printInvertedIndex" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="titleLabel" min="-2" pref="465" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="instructionsLabel" min="-2" pref="433" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="sortByLabel" min="-2" pref="153" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="19" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -91,9 +93,15 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                              <Component id="titleLabel" min="-2" pref="51" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="sortByLabel" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="titleLabel" min="-2" pref="51" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="instructionsLabel" min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="instructionsLabel" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="IncDocRadio" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -104,10 +112,6 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="sortByLabel" min="-2" pref="28" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="IncDocRadio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="DecDocRadio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -132,6 +136,7 @@
           <Font name="Lucida Grande" size="25" style="0"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="actionCommand" type="java.lang.String" value="&lt;Not Set&gt;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="titleLabel">
@@ -223,7 +228,7 @@
           <Font name="Lucida Grande" size="20" style="0"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Sort results by:"/>
+        <Property name="text" type="java.lang.String" value="Sort results by"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
