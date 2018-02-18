@@ -1,3 +1,6 @@
+/*
+* Search Engine
+*/
 package searchengine;
 
 import java.awt.Color;
