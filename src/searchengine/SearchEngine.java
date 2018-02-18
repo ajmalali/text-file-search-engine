@@ -467,12 +467,12 @@ public class SearchEngine extends javax.swing.JFrame {
 
             for (String searchWord : inputs) {
                 int indexOfWord = Arrays.asList(allText).indexOf(searchWord);
-                int limit = indexOfWord + 10;
+                int limit = indexOfWord + 5;
 
                 if (indexOfWord < 0) {
                     continue;
                 } else {
-                    indexOfWord -= 7;
+                    indexOfWord -= 5;
                 }
                 for (int i = indexOfWord; i <= limit; i++) {
                     try {
